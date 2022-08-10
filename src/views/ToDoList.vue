@@ -3,34 +3,39 @@
     <h1>To Do List</h1>
   </div>
   <div>
-    <button class="btn" @click="num++">XD</button>
-    <p>{{num}}</p>
-    <button class="btn_reset" @click="num = 0">RESET</button>
+    <input class="input" @keyup.enter="$store.commit('saveItem')" type="text" placeholder="To Do..." v-model="$store.state.newItem">
+    <div>
+      <button :disabled="$store.state.newItem.length === 0" @click="$store.commit('saveItem')">Add To List</button>
+    </div>
   </div>
-  <button @click="$router.push('/RockPaperScissors')">RockPaperScissors</button>
+  <div>
+    <ListItem></ListItem>
+  </div>
+  <div>
+    <button class="btn" @click="$router.push({name:'DeletedItems'})">Deleted items</button>
+  </div>
 </template>
 
 <script>
+import ListItem from '@/components/item-list.vue'
+
 export default {
   name: 'ToDoList',
   components: {
-
-  },
+    ListItem
+},
   data (){
     return {
-      num: 0
+
     }
   },
   methods: {
-
   }
 }
 </script>
 
 <style>
 
-.btn_reset {
-  margin-bottom: 20px;
-}
+
 
 </style>

@@ -12,7 +12,7 @@
                 </div>
             </div>
             <div class="nameInput_wrapper ic1">
-                <input id="name" class="input" type="text" placeholder=" " />
+                <input id="name" class="input-name" type="text" placeholder=" " />
                 <div class="cut"></div>
                 <label for="name" class="placeholder">Your name</label>
             </div>
@@ -251,7 +251,7 @@ input[type="radio"]{
   margin-top: 0px;
 }
 
-.input {
+.input-name {
   background-color: #303245;
   border-radius: 12px;
   border: 0;
@@ -280,8 +280,8 @@ input[type="radio"]{
   width: 50px;
 }
 
-.input:focus ~ .cut,
-.input:not(:placeholder-shown) ~ .cut {
+.input-name:focus ~ .cut,
+.input-name:not(:placeholder-shown) ~ .cut {
   transform: translateY(8px);
 }
 
@@ -297,16 +297,16 @@ input[type="radio"]{
   top: 20px;
 }
 
-.input:focus ~ .placeholder,
-.input:not(:placeholder-shown) ~ .placeholder {
+.input-name:focus ~ .placeholder,
+.input-name:not(:placeholder-shown) ~ .placeholder {
   transform: translateY(-30px) translateX(10px) scale(0.75);
 }
 
-.input:not(:placeholder-shown) ~ .placeholder {
+.input-name:not(:placeholder-shown) ~ .placeholder {
   color: #808097;
 }
 
-.input:focus ~ .placeholder {
+.input-name:focus ~ .placeholder {
   color: #2c3e50;
 }
 

@@ -20,6 +20,11 @@ const routes = [
     path: '/RockPaperScissors',
     name: 'RockPaperScissors',
     component: () => import(/* webpackChunkName: "RockPaperScissors" */ '../views/RockPaperScissors.vue')
+  },
+  {
+    path: '/DeletedItems',
+    name: 'DeletedItems',
+    component: () => import(/* webpackChunkName: "DeletedItems" */ '../views/Deleted.vue')
   }
 ]
 

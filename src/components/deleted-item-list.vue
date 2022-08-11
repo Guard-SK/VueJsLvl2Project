@@ -22,36 +22,5 @@ export default {
 }
 </script>
 <style>
-.item_container{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0px;
-    gap: 5px;
-    border-top-style: solid ;
-    border-bottom-style: solid ;
-    border-width: 1px;
-    margin-top: 14px;
-    padding: 5px;
-}
-.delete{
-    width: 20px;
-    height: 20px; 
-}
-.edit{
-    width: 20px;
-    height: 20px; 
-}
-.actions {
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-padding: 0px;
-gap: 10px;
 
-flex: none;
-order: 1;
-flex-grow: 0;
-}
 </style>

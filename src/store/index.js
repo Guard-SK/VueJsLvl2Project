@@ -5,7 +5,8 @@ export default createStore({
     counter: 0,
     item_list: [],
     newItem: '',
-    isDeleted: false
+    isDeleted: false,
+    isEditDisplayed: 'none'
   },
   getters: {
     item_list_value(state) {

@@ -22,7 +22,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "RockPaperScissors" */ '../views/RockPaperScissors.vue')
   },
   {
-    path: '/DeletedItems',
+    path: '/ToDoList/DeletedItems',
     name: 'DeletedItems',
     component: () => import(/* webpackChunkName: "DeletedItems" */ '../views/Deleted.vue')
   }

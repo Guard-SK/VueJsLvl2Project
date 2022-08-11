@@ -14,6 +14,9 @@
   <div>
     <button class="btn" @click="$router.push({name:'DeletedItems'})">Deleted items</button>
   </div>
+  <div>
+    <button class="clearlist" @click="$store.state.item_list = []">Permanently delete all items</button>
+  </div>
 </template>
 
 <script>
@@ -36,6 +39,9 @@ export default {
 
 <style>
 
-
+.clearlist {
+  margin-top: 100px;
+  margin-bottom: 10px;
+}
 
 </style>

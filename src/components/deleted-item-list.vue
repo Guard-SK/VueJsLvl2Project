@@ -2,8 +2,10 @@
 <div v-for="(item) in $store.getters.item_list_value" :key="item.id">
     <div class="item_container" v-if="item.deleted == true" >
         <p >{{item.message}}</p>
-        <img  @click="item.deleted = false" class="delete" src="../assets/recovery.png">
-        <img @click="item.deleted = true" class="edit" src="../assets/edit.png">
+        <div class="actions">
+            <img @click="item.deleted = true" class="edit" src="../assets/edit.png">
+            <img  @click="item.deleted = false" class="delete" src="../assets/recovery.png">
+        </div>
     </div>
 </div>
 </template>
@@ -39,5 +41,17 @@ export default {
 .edit{
     width: 20px;
     height: 20px; 
+}
+.actions {
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 10px;
+
+flex: none;
+order: 1;
+flex-grow: 0;
 }
 </style>

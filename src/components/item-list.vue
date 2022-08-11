@@ -3,8 +3,8 @@
     <div class="item_container" v-if="item.deleted == false">
         <p>{{item.message}}</p>
         <div class="actions">
-            <img @click="item.deleted = true" class="delete" src="../assets/deleted_icon.png">
             <img class="edit" src="../assets/edit.png">
+            <img @click="item.deleted = true" class="delete" src="../assets/deleted_icon.png">
         </div>
     </div>
 </div>
@@ -49,7 +49,7 @@ flex-direction: row;
 justify-content: center;
 align-items: center;
 padding: 0px;
-gap: 5px;
+gap: 10px;
 
 flex: none;
 order: 1;

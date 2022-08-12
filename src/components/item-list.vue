@@ -9,10 +9,10 @@
             </div>
         </div>
         <div class="edit_container" v-bind:style="{ display: $store.state.isEditDisplayed }">
-            <textarea id="edittextarea" rows="4" cols="50"></textarea>
+            <textarea class="edittextarea" rows="4" cols="50" v-model="item.message"></textarea>
             <div class="edit_action_buttons">
-                <button @click="$store.state.isEditDisplayed = 'none'" class="discardEditbtn">Discard Edit</button>
-                <button @click="item.message = document.getElementById('#edittextarea').value" class="submitEditbtn">Submit Edit</button>
+                <button @click="$store.state.isEditDisplayed = 'none'" class="discardEditbtn">Discard Edit</button> <!-- TODO: Discard button -->
+                <button class="submitEditbtn">Submit Edit</button> <!-- TODO: Submit button -->
             </div>
         </div>
     </div>

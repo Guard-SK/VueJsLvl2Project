@@ -6,31 +6,20 @@
   <div>
     <DeletedItemList></DeletedItemList>
   </div>
-<div>
-    <button class="btn" @click="$router.push({name:'ToDoList'})">Back to To Do List</button>
+  <div>
+    <button class="btn" @click="$router.push({ name: 'ToDoList' })">
+      Back to To Do List
+    </button>
   </div>
 </template>
 
 <script>
-import DeletedItemList from '../components/deleted-item-list.vue'
+  import DeletedItemList from '../components/deleted-item-list.vue'
 
-export default {
-  name: 'ToDoList',
-  components: {
-    DeletedItemList
-},
-  data (){
-    return {
-
-    }
-  },
-  methods: {
+  export default {
+    name: 'DeletedItems',
+    components: {
+      DeletedItemList,
+    },
   }
-}
 </script>
-
-<style>
-
-
-
-</style>

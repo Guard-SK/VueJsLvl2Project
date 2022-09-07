@@ -1,3 +1,5 @@
+# 7.9
+nic take vyzera to fajn
 # 15.8 
 [] vymazat v scriptoch prazdne funkcie, methody, data
 [] najlepsie si stahnut niky formatter lebo mas niekde odsadene zle tagy tak v tom je potom chaos
